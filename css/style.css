@@ -4,8 +4,12 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: gray;
+    background-color: rgba(11, 11, 26, 0.863);
 }
 
 section {
@@ -13,6 +17,121 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 80px 100px;
+    padding: 20px 100px;
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main__title {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    width: 1150px;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .image {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.content .image img {
+    z-index: 111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.content .text__box {
+    z-index: 222;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.3rem);
+    padding: 20px;
+    max-width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transform: translate(-100px, 0px);
+}
+
+.content .text__box h3 {
+    font-size: 2.3rem;
+    margin-bottom: 10px;
+}
+
+.content .text__box p {
+    color: white
+}
+
+.media__icones {
+    margin: 50px;
+}
+
+.media__icones a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 60px;
+}
+
+.section__title {
+    font-size: 2.4rem;
+    margin-bottom: 80px;
+}
+
+.info__title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.info {
+    width: 700px;
+    margin-left: 50px;
+}
+
+.media__info {
+    width: 400px;
+    margin-left: 50px;   
+}
+
+.media__info li {
+    list-style: none;
+    font-size: 1.4rem;
+}
+
+.media__info li a {
     color: white;
+    text-decoration: none;
+}
+
+.media__info li:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.media__info li:nth-child(1), .media__info li:nth-child(5) {
+    padding-left: 100px;
+}
+
+.media__info li:nth-child(2), .media__info li:nth-child(4) {
+    padding-left: 50px;
+}
+
+.sec__03 {
+        margin: 80px 0;
 }
